@@ -1,0 +1,39 @@
+{
+  "name": "modeler-stripe",
+  "version": "0.0.1",
+  "description": "Stripe backend for modeler functional entity system",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/danmactough/modeler-stripe.git"
+  },
+  "keywords": [
+    "entity",
+    "model",
+    "orm",
+    "odm",
+    "bacon",
+    "fat",
+    "cash",
+    "awesome",
+    "modeler",
+    "stripe"
+  ],
+  "author": "Dan MacTough <danmactough@gmail.com>",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/danmactough/modeler-stripe/issues"
+  },
+  "homepage": "https://github.com/danmactough/modeler-stripe",
+  "dependencies": {
+    "modeler": "~0.4.3"
+  },
+  "devDependencies": {
+    "idgen": "~1.3.0",
+    "stripe": "~2.3.2",
+    "mocha": "~1.17.0"
+  }
+}
