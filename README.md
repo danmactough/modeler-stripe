@@ -1,7 +1,7 @@
 modeler-stripe
 ==============
 
-Stripe backend for modeler functional entity system
+Stripe backend for [modeler](https://github.com/carlos8f/modeler) functional entity system
 
 - - -
 

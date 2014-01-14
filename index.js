@@ -118,7 +118,7 @@ module.exports = function (_opts) {
 
   api._load = function (id, cb) {
     collection.retrieve(id, function (err, savedEntity) {
-      if (err && !err.message.match(/No such (?:customer|card)/)) return cb(err);
+      if (err && !err.message.match(/No such (?:customer)/)) return cb(err);
       cb(null, savedEntity ? api._afterLoad(savedEntity) : null);
     });
   };
