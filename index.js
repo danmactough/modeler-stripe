@@ -17,10 +17,6 @@ module.exports = function (_opts) {
   if (api.options.apiVersion) stripe.setApiVersion(api.options.apiVersion);
   collection = stripe[api.options.name];
 
-  api._loadMulti = function (results, cb) {
-    cb(null, results.map(api._afterLoad));
-  };
-
   api._beforeSave = function (entity) {
     var e = api.copy(entity)
       , metadata = {};
@@ -96,7 +92,7 @@ module.exports = function (_opts) {
       collection.list(params, function (err, entities) {
         if (err) return cb(err);
         offset += entities.data.length;
-        cb(null, entities.data, fetchNext);
+        cb(null, entities.data.map(api._afterLoad), fetchNext);
       });
     })();
   };
