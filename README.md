@@ -1,6 +1,8 @@
 modeler-stripe
 ==============
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/danmactough/modeler-stripe.svg)](https://greenkeeper.io/)
+
 Stripe backend for [modeler](https://github.com/carlos8f/modeler) functional entity system
 
 - - -
